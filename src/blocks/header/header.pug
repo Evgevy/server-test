@@ -1,7 +1,7 @@
 mixin header(modifier)
   header.header&attributes(attributes)
     .header__content
-      .header__inner
+      .header__inner 
         a(href='#!').header__logo
           img(src='img/logo.svg' alt="Логотип").header__logo-image
         nav.header__nav
@@ -10,7 +10,7 @@ mixin header(modifier)
               a(href='#').header__link Интернет
             li.header__item
               a(href='#').header__link Телевидение
-            li.header__item.header__one
+            li.header__item
               a(href='#').header__link Выгодно
               ul.header__dropdown
                 li.header__down-item
@@ -21,11 +21,12 @@ mixin header(modifier)
               a(href='#').header__link Видеонаблюдение
             li.header__item
               a(href='#').header__link Оборудование
-            li.header__item.header__two
+            li.header__item
               a(href='#').header__link Информация
-              .header__dropdown
-                .header__down-list
+              ul.header__dropdown
+                li.header__down-item
                   a(href='#').header__down-link Новости
+                li.header__down-item
                   a(href='#').header__down-link Вакансии
             li.header__item
               a(href='#').header__link Контакты
@@ -34,4 +35,3 @@ mixin header(modifier)
           include img/user.svg
         button(type="button").header__burger-btn 
           include img/burger.svg 
-        
