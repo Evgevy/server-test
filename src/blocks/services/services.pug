@@ -1,0 +1,43 @@
+mixin services(modifier)
+  section.services&attributes(attributes)
+    .services__content 
+      h2.services__title Доступные услуги
+      .services__pay
+        button(type="button").services__wallet Оплатить услуги
+          include img/wallet.svg
+        button(type="button").services__wallet-small Оплатить
+          include img/wallet.svg
+      .services__card-box 
+        .services__card 
+          img(src="img/camera-sity.png" alt="Городсая камера").services__img
+          h4.services__card-title Городские камеры
+          p.services__text Будьте в курсе всех событий не выходя из дома
+          .services__card-price
+            .services__price-line
+              p.services__price 0
+              .services__sum
+                span руб
+                span мес 
+            button(type="button").services__btn Узнать подробнее
+        .services__card 
+          img(src="img/camera-yard.png" alt="Дворовая камера").services__img
+          h4.services__card-title Дворовые камеры
+          p.services__text Наблюдайте за вашим имуществом не выходя из дома через любое устройство
+          .services__card-price 
+            .services__price-line
+              p.services__price 0
+              .services__sum
+                span руб
+                span мес
+            button(type="button").services__btn Узнать подробнее
+        .services__card 
+          img(src="img/camera-person.png" alt="Персональная камера").services__img
+          h4.services__card-title Персональные камеры
+          p.services__text Где бы вы ни находились, вы всегда можете узнать о происходящем дома с любого устройства
+          .services__card-price 
+            .services__price-line
+              p.services__price от350
+              .services__sum
+                span руб
+                span мес
+            button(type="button").services__btn Узнать подробнее

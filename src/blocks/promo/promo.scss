@@ -1,0 +1,93 @@
+.promo {
+    background: rgb(248, 248, 248);
+    background-image: url(../img/camers.png);
+    background-repeat: no-repeat;
+    background-size: 800px 412px;
+    background-position: right center;
+    
+    &__content {
+        width: 100%;
+        max-width: 1460px;
+        margin: 0 auto;
+        padding: 0 10px;
+        
+    }
+
+    &__info {
+        padding: 64px 0;
+    }
+
+    &__title {
+        font-family: Inter;
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 130%;
+        margin-bottom: 40px;
+        max-width: 725px;
+        width: 100%;
+    }
+
+    &__btn {
+        width: 290px;
+        height: 50px;
+        padding: 0px 32px 0px 32px;
+        border-radius: 8px;
+        background: rgb(238, 37, 35);
+        font-family: Inter;
+        font-size: 16px;
+        line-height: 150%;
+        color: rgb(255, 255, 255);
+    }
+
+    @media screen and (max-width: 1330px) {
+        background-position: right -330px center;
+        &__info {
+            padding: 80px 0;
+        }
+
+        &__title {
+            font-size: 40px;
+            max-width: 605px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &__info {
+            margin-left: 40px;
+        }
+    }
+
+    @media screen and (max-width: 660px) {
+        background-image: url(../img/camera-small.png);
+        background-repeat: no-repeat;
+        background-size: 650px 469px;
+        background-position: right -180px top;
+        
+        &__info {
+            padding: 60px 0;
+            margin-left: 45px;
+        }
+
+        &__title {
+            font-size: 36px;
+            max-width: 392px;
+        }
+    }
+
+    @media screen and (max-width: 389px) {
+        background-position: right -185px top;
+        &__title {
+            font-size: 25px;
+            max-width: 392px;
+        }
+
+        &__btn {
+            width: 220px;
+            height: 50px;
+        }
+    }
+
+
+
+   
+}

@@ -1,0 +1,37 @@
+mixin header(modifier)
+  header.header&attributes(attributes)
+    .header__content
+      .header__inner
+        a(href='#!').header__logo
+          img(src='img/logo.svg' alt="Логотип").header__logo-image
+        nav.header__nav
+          ul.header__menu
+            li.header__item
+              a(href='#').header__link Интернет
+            li.header__item
+              a(href='#').header__link Телевидение
+            li.header__item.header__one
+              a(href='#').header__link Выгодно
+              ul.header__dropdown
+                li.header__down-item
+                  a(href='#').header__down-link Интернет+TV
+                li.header__down-item
+                  a(href='#').header__down-link Конструктор тарифа
+            li.header__item
+              a(href='#').header__link Видеонаблюдение
+            li.header__item
+              a(href='#').header__link Оборудование
+            li.header__item.header__two
+              a(href='#').header__link Информация
+              .header__dropdown
+                .header__down-list
+                  a(href='#').header__down-link Новости
+                  a(href='#').header__down-link Вакансии
+            li.header__item
+              a(href='#').header__link Контакты
+        a(href='tel:+73496458000').header__phone +7 (3496) 45-80-00
+        button(type="button").header__btn
+          include img/user.svg
+        button(type="button").header__burger-btn 
+          include img/burger.svg 
+        
