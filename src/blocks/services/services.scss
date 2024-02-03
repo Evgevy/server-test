@@ -56,7 +56,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 50px;
+        gap: 60px;
         flex-wrap: wrap;
         margin-bottom: 64px;
     }
@@ -103,13 +103,20 @@
         align-items: center;
     }
 
-    &__price {
+    &__price,
+    &__pretext {
         color: rgb(0, 0, 0);
         font-family: Inter;
         font-size: 48px;
         font-weight: 500;
         line-height: 24px;
         letter-spacing: 0.5px;
+    }
+
+    &__pretext {
+        font-size: 25px;
+        align-self: flex-end;
+        margin-right: 5px;
     }
 
     &__sum {
